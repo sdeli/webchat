@@ -1,0 +1,25 @@
+<% if (pageId === 'docler-server-webchat' || pageId === 'own-server-webchat') { %>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/bem/webchat.js"></script>
+    <script src="js/set-up-webchat.js"></script>
+<% } %>
+
+<% if (pageId === 'docler-server-webchat') { %>
+    <script>
+        const SOCKET_IO_SERVER__ADDR = 'http://185.13.90.140:8081/';
+        
+        document.addEventListener("DOMContentLoaded", function(event) {
+            setUpWebchat(SOCKET_IO_SERVER__ADDR)
+        });
+    </script>
+<% } %>
+
+<% if (pageId === 'own-server-webchat') { %>
+    <script>
+        const OWN_SERVER__ADDR = 'http://localhost:3000/';
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            setUpWebchat(OWN_SERVER__ADDR)
+        });
+    </script>
+<% } %>

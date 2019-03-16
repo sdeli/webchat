@@ -1,0 +1,119 @@
+/* GLOBAL STYLES*/
+.background-sky-blue {
+    background: #b1cefd;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+
+.clearfix:after {
+    clear: both;
+} 
+
+.clearfix:after {
+    zoom: 1;
+} 
+
+/* BEM BLOCKS */
+
+/* widget block */
+.centered-widget {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* webchat block */
+.webchat {
+    width: 16.6175rem;
+    border: 1px solid black;
+    height: 24.6875rem;
+    position: relative;
+    padding: 0.1875rem;
+    box-sizing: border-box;
+    box-shadow: -1px 2px 5px #383838;
+}
+
+.webchat__feed__message {
+    font-family: sans-serif;
+    font-size: 0.8125rem;
+}
+
+.webchat__feed__message:first-child {
+    margin-top: 0.225rem;
+}
+
+.webchat__feed__message--right {
+    text-align: right;
+}
+
+.webchat__input-row {
+    height: 1.375rem;
+    position: absolute;
+    bottom: 0.625rem;
+    display: block;
+}
+
+.webchat__input-row__input-field {
+    width: 2.625rem;
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 0.6875rem;
+    height: 100%;
+    box-sizing: border-box;
+    color: black;
+    box-shadow: 1px 1px 1px #000000;
+    text-indent: 0.1875rem;
+}
+
+.webchat__input-row__input-field--margin-left {
+    margin-left: 3px;
+}
+
+.webchat__input-row__input-field--margin-right {
+    margin-right: 3px;
+}
+
+.webchat__input-row__input-field::placeholder {
+    color: black;
+    font-size: 0.6875rem;
+}
+
+.webchat__input-row__input-field--message {
+    margin: 0 0.4875rem;
+    width: 8.8125rem;
+}
+
+.info {
+    font-family: poppins;
+}
+
+.info__container__head {
+    color: orangered;
+    font-weight: bold;
+    text-shadow: 3px 1px 2px white;
+}
+
+.info__container__p {
+    margin: 0.4375rem 0;
+}
+
+.info__container__p--bold {
+    text-shadow: 1px 1px 2px #a2a1a1;
+    font-weight: bold;
+}
+.unordered-list {
+    list-style-type: none;
+    padding-left: 0.6rem;
+    font-family: poppins;
+    margin: 0;
+}
+
+.unordered-list__li {
+    padding: 0.2rem 0.3rem;
+}

@@ -1,0 +1,64 @@
+{
+    "restEndPoints" : {
+        "indexView" : "/",
+        "doclerWebchatView" : "/docler-server-webchat",
+        "ownWebchatView" : "/own-server-webchat",
+        "fiveOOneView" : "/501",
+        "fourOFourView" : "/404"
+    },
+    "flashMessages" : {
+        "serverSideErr" : "An issue has happened, please contact the site admin.",
+        "fourOfourErr" : "This page hasnt been found."
+    },
+    "templateConf" : {
+        "fiveOOne" : {
+            "id" : "501",
+            "title" : "501"
+        },
+        "fourOfour" : {
+            "id" : "404",
+            "title" : "404"
+        },
+        "doclerWebChat" : {
+            "id" : "docler-server-webchat",
+            "title" : "Docler Webchat"
+        },
+        "ownWebChat" : {
+            "id" : "own-server-webchat",
+            "title" : "Own Webchat"
+        },
+        "index" : {
+            "id" : "index",
+            "title" : "Home"
+        }
+    },
+    "pathes" : {
+        "views" : {
+            "self" : "./views",
+            "webchat" : "/webchat.ejs",
+            "error" : "/error.ejs",
+            "index" : "/index.ejs"
+        },
+        "logs" : {
+            "error" : "./logs/error"
+        },
+        "public" : "./public"
+    },
+    "mimeTypes" : {
+        ".html": "text/html",
+        ".js": "text/javascript",
+        ".css": "text/css",
+        ".json": "application/json",
+        ".png": "image/png",
+        ".jpg": "image/jpg",
+        ".gif": "image/gif",
+        ".wav": "audio/wav",
+        ".mp4": "video/mp4",
+        ".woff": "application/font-woff",
+        ".ttf": "application/font-ttf",
+        ".eot": "application/vnd.ms-fontobject",
+        ".otf": "application/font-otf",
+        ".svg": "application/image/svg+xml"
+    },
+    "serverListenPort" : 3000
+}
