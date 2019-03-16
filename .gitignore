@@ -1,0 +1,10 @@
+app/logs/**/*.txt
+
+node_modules/
+
+app/.env.default
+
+test/
+
+app/logs/error/*
+!app/logs/error/.gitkeep
