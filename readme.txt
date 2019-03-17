@@ -1,4 +1,4 @@
-Readme for the WEB CHAT application.
+Readme for the WEB CHAT application (http://www.sandorsjavascript.club/).
 
 creator: Sandor Deli
 
@@ -6,24 +6,32 @@ Purpose of the application:
     The application is bare bones of a webchat application and a homework as well.
 
 Description
-	The application has two main pages:
-        (To create two pages was not in the homework, but since I have never created a webchat, but I was really curious about, I was interested in how it works on the backend, so I created a backend for it, out of fun and curiosity)
-        - A webchat which communicates with a server provided by Docler Holding
-            - link: /docler-server-webchat
-        - A webchat communicating with a server created by Sandor Deli
-            - link: /own-server-webchat
-        - Both pages/sub applications provide:
-         		- a chat window, where the user can enter his username, a message and click on send.
-                - if he/she clicks on send, then the message is sent to the server.
-                - /own-server-webchat will respond on a send message with a standard reply and broadcast the chat message to further clients which have opened the same page.
+	- The applications domain is: http://www.sandorsjavascript.club/ feel free to visit it. 
+	- The application has two main pages:
+        (To create two pages was not in the homework, but since I have never created a webchat, but I was really curious about it, I was interested in how it works on the backend, so I created a backend for it, out of fun and curiosity)
+            - A webchat which communicates with a server provided by Docler Holding
+                - link: /docler-server-webchat
+            - A webchat communicating with a server created by Sandor Deli
+                - link: /own-server-webchat
+            - Both pages/sub applications provide:
+         	 - a chat window, where the user can enter his username, a message and click on send.
+                 - if he/she clicks on send, then the message is sent to the server.
+                 - /own-server-webchat will respond on a send message with a standard reply and broadcast the chat message   to further clients which have opened the same page.
+	- the webchat has a home page as well at: /
+        - The whole application consits of a backend and a frontend, it doesnt feature any database.
 
-    The whole application consits of a backend and a frontend, it doesnt feature any database.
+DEPLOYMENT
+	- Application is deployed on a Digital Ocean (https://digitalocean.com) Vps server, on Ubuntu 18.04.2 x64.
+	- No ssl certificate has been created, to secure the connection, the requested 0.9 version of socket.io had some issues with ssl connection and I should't upgrade it.
+	- Node version: 10.0.0
+	- pm2 is the main process manager 
 
 FRONT END
 	- Technologies: html, css, vanilla javascript
 	- Dependencies: socket.io
 
-    - There are 4 websites:
+    - The Website has 5 Pages:
+    	- /  (homepage)
         - /docler-server-webchat
         - /own-server-webchat
         - /404
